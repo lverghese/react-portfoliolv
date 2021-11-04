@@ -8,12 +8,12 @@ function Footer() {
 
     return(
         <footer className="mt-5">
-            <Container>
-                <Row>
-                    <Col className="p-0">
+            <Container fluid={true}>
+                <Row className="border-top justify-content-between p-3">
+                    <Col className="p-0" md={3} sm={12}>
                         Logan Verghese
                     </Col>
-                    <Col>
+                    <Col className="p-0 d-flex justify-content-end" md={3}>
                         Made by Logan Verghese
                     </Col>
                 </Row>
@@ -21,3 +21,5 @@ function Footer() {
         </footer>
     )
 }
+
+export default Footer;

@@ -1,7 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import Navigation from './components/Navigation';
+import Footer from './components/Footer';
 import './App.css';
 
 class App extends React.Component {
@@ -43,6 +44,7 @@ class App extends React.Component {
         <Container className="p-0" fluid={true}>
         {/*navbar goes here */}
         <Navigation />
+        <Footer />
         </Container>
       </Router>
     );
