@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
-import Nav from './components/Nav';
+import Navigation from './components/Navigation';
 import './App.css';
 
 class App extends React.Component {
@@ -42,7 +42,7 @@ class App extends React.Component {
       <Router>
         <Container className="p-0" fluid={true}>
         {/*navbar goes here */}
-        <Nav />
+        <Navigation />
         </Container>
       </Router>
     );
