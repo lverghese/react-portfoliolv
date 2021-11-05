@@ -9,6 +9,7 @@ import Contact from './components/Contact';
 import Project from './components/Project';
 import Footer from './components/Footer';
 import Resume from './components/Resume';
+
 import './App.css';
 
 class App extends React.Component {
@@ -25,6 +26,7 @@ class App extends React.Component {
       ],
       home: {
         title: "My React Portfolio",
+
         subTitle: "Let's See How I Did!",
         text: "Check out my past projects!"
       },
@@ -40,16 +42,19 @@ class App extends React.Component {
       contact: {
         title: "Hit Me Up"
         
+
       },
       resume: {
         title: "Professional Resume"
         
+
       }
     }
   }
 
   render() {
     return (
+
       <Router>
         <Container className="p-0" fluid={true}>
         <Container className="p-0" fluid={true}>
@@ -81,6 +86,7 @@ class App extends React.Component {
         </Container>
         
       </Router>
+
     );
   }
  
