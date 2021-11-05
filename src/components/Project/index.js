@@ -1,10 +1,14 @@
 import React from "react";
+import Carousel from '../Carousel'
 
 function Project(props) {
 
     return(
-        <p>Project Page Works</p>
-
+        <div>
+              <p>Project Page Works</p>
+            <Carousel />
+        </div>
+      
     )
 }
 
