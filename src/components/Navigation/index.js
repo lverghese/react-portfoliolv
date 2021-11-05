@@ -1,8 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Route, Link, Routes } from 'react-router-dom';
 import { Container, NavbarBrand, Navbar, Nav } from 'react-bootstrap';
 import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
 import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
+import Home from '../Home';
 
 class Navigation extends React.Component {
 
@@ -10,7 +11,7 @@ class Navigation extends React.Component {
 
   render() {
     return (
-        <Container className="p-0" fluid={true}>
+      <Container className="p-0" fluid={true}>
             <Navbar className="border-bottom" bg="transparent" expand='lg'>
                 <NavbarBrand>Logan Verghese</NavbarBrand>
 
@@ -21,10 +22,10 @@ class Navigation extends React.Component {
                       <Link className="nav-link" to='/about'>About</Link>
                       <Link className="nav-link" to='/projects'>Projects</Link>
                       <Link className="nav-link" to='/contact'>Contact</Link>
-
                     </Nav>
                 </NavbarCollapse>
             </Navbar>
+            
         </Container>
       
     );
