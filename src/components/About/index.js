@@ -6,7 +6,7 @@ function About(props) {
         <div className="header-wrapper">
             <div className="main-info">
                 <img className="profile-pic" src={profilePic} alt="about-me"></img>
-                <h1>Logan Verghese</h1>
+                
                 { props.title && <h1>{props.title}</h1>}
                 <div>
                     <p>

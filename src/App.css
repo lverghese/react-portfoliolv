@@ -81,3 +81,13 @@ body {
 .profile-pic {
   max-height: 200px;
 }
+
+.resume-img {
+  max-height: 1400px;
+  max-width: 1000px;
+}
+
+.resume-wrapper {
+  display: flex;
+  width: 50%;
+}
