@@ -5,7 +5,6 @@ function Project(props) {
 
     return(
         <div>
-              <p>Project Page Works</p>
             <Carousel />
         </div>
       

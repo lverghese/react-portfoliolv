@@ -1,4 +1,3 @@
-import { render } from "@testing-library/react";
 import runBuddy from '../../assets/images/run-buddy.png'
 import fitnessBuddy from '../../assets/images/fitnessBuddy.png'
 import frontEnd from '../../assets/images/frontEnd.png'
@@ -87,14 +86,14 @@ class Carousel extends React.Component {
    
     makeItems = (items) => {
         return items.map(item => {
-            return <Card item={item} onClick={(e => this.handleCardClick(item.id, e))} key={item.id} />
+            return <Card item={item} click={(e => this.handleCardClick(item.id, e))} key={item.id} />
         })
     }
 
     render() {
         return(
             <Container fluid={true}>
-                <Row className="justify-content-around">
+                <Row className="justify-content-around mx-auto mt-4" sm={3}>
                     {this.makeItems(this.state.items)}
                 </Row>
             </Container>
