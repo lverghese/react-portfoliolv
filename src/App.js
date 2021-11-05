@@ -24,13 +24,13 @@ class App extends React.Component {
       ],
       home: {
         title: "My React Portfolio",
-        subTitle: "Let's See How I Did",
+        subTitle: "Let's See How I Did!",
         text: "Check out my past projects!"
       },
       about: {
-        title: "My React Portfolio",
-        subTitle: "Let's See How I Did",
-        text: "Check out my past projects!"
+        title: "Learn Something About Me",
+        subTitle: "Who Am I?",
+        text: "Just a fellow bootcamp student trying to learn as much as he can, as efficiently as he can."
       },
       project: {
         title: "My Project Portfolio"
