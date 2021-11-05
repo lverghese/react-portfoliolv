@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Route, Link, Routes } from 'react-router-dom';
+import { BrowserRouter as Route, Link, Switch } from 'react-router-dom';
 import { Container, NavbarBrand, Navbar, Nav } from 'react-bootstrap';
 import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
 import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
@@ -25,7 +25,9 @@ class Navigation extends React.Component {
                     </Nav>
                 </NavbarCollapse>
             </Navbar>
-            
+            <Switch>
+            <Route exact path="/" component={Home} />
+            </Switch>
         </Container>
       
     );

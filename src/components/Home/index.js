@@ -3,7 +3,14 @@ import React from "react";
 function Home(props) {
 
     return(
-        <p>Home Page Works</p>
+        <div className="header-wrapper">
+            <div className="main-info">
+                <h1>Logan Verghese</h1>
+                
+               
+            </div>
+
+        </div>
 
     )
 }

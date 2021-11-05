@@ -1,8 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import { Container} from 'react-bootstrap';
-import Navigation from './components/Navigation'
+import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
+import { Container, NavbarBrand, Navbar, Nav } from 'react-bootstrap';
+import NavbarToggle from 'react-bootstrap/esm/NavbarToggle';
+import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
 import Home from './components/Home';
+import About from './components/About';
+import Contact from './components/Contact';
+import Project from './components/Project';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -15,7 +19,7 @@ class App extends React.Component {
       headerLinks: [
         {title: 'Home', path: '/'},
         {title: 'About', path: '/about'},
-        {title: 'Projects', path: '/projects'},
+        {title: 'Projects', path: '/project'},
         {title: 'Contact', path: '/contact'},
       ],
       home: {
@@ -28,7 +32,7 @@ class App extends React.Component {
         subTitle: "Let's See How I Did",
         text: "Check out my past projects!"
       },
-      projects: {
+      project: {
         title: "My Project Portfolio"
        
       },
@@ -43,8 +47,27 @@ class App extends React.Component {
     return (
       <Router>
         <Container className="p-0" fluid={true}>
-          <Navigation />
-          <Home />
+        <Container className="p-0" fluid={true}>
+            <Navbar className="border-bottom" bg="transparent" expand='lg'>
+                <NavbarBrand>Logan Verghese</NavbarBrand>
+
+                <NavbarToggle className="border-0" aria-controls='navbar-toggle' />
+                <NavbarCollapse id='navbar-toggle'>
+                    <Nav className="ms-auto">
+                      <Link className="nav-link" to='/'>Home</Link>
+                      <Link className="nav-link" to='/about'>About</Link>
+                      <Link className="nav-link" to='/project'>Projects</Link>
+                      <Link className="nav-link" to='/contact'>Contact</Link>
+                    </Nav>
+                </NavbarCollapse>
+            </Navbar>
+            <Switch>
+            <Route path="/" exact render={() => <Home title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} />}  />
+            <Route path="/about" exact render={() => <About title={this.state.about.title}  />}  />
+            <Route path="/contact" exact render={() => <Contact title={this.state.contact.title}  />}  />
+            <Route path="/project" exact render={() => <Project title={this.state.project.title} />}  />
+            </Switch>
+        </Container>
           <Footer />
 
         </Container>
