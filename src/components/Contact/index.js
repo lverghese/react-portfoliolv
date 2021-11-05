@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
+import { Form, FormLabel, FormGroup, Button } from 'react-bootstrap'
 
 function Contact() {
 
@@ -36,28 +37,29 @@ function Contact() {
     
 
     return(
-        <section>
+        <section className="contact-wrapper">
             <h1 data-testid="h1tag">Contact Me</h1>
-            <form id="contact-form" onSubmit={handleSubmit}>
-            <div>
-                <label htmlFor="name">Name:</label>
-                <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
-            </div>
-            <div>
-                <label htmlFor="email">Email address:</label>
-                <input type="email" defaultValue={email} name="email" onBlur={handleChange} />
-            </div>
-            <div>
-                <label htmlFor="message">Message:</label>
-                <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5"  />
-                {errorMessage && (
-                    <div>
-                        <p className="error-text">{errorMessage}</p>
-                    </div>
-                    )}
-                <button data-testid="button" type="submit">Submit</button>
-            </div>
-            </form>
+            <Form id="contact-form mx-auto"  onSubmit={handleSubmit}>
+              <FormGroup className="mb-2">
+                  <FormLabel htmlFor="name">Name:</FormLabel>
+                  <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
+              </FormGroup>
+              <FormGroup className="mb-3">
+                  <FormLabel htmlFor="email">Email address:</FormLabel>
+                  <input type="email" defaultValue={email} name="email" onBlur={handleChange} />
+              </FormGroup>
+              <FormGroup className="mb-3">
+                  <FormLabel htmlFor="message">Message:</FormLabel>
+                  <textarea name="message" defaultValue={message} onBlur={handleChange} rows="2"  />
+                  {errorMessage && (
+                      <div>
+                          <p className="error-text bg-black">{errorMessage}</p>
+                      </div>
+                      )}
+                  
+              </FormGroup>
+              <Button data-testid="button" type="submit">Submit</Button>
+            </Form>
         </section>
     )
 

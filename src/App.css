@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
+
 body {
   font-family: 'Roboto Condensed' sans-serif;
 }
@@ -83,11 +84,57 @@ body {
 }
 
 .resume-img {
-  max-height: 1400px;
-  max-width: 1000px;
+  max-height: 500px;
+ 
+  justify-content: center;
 }
 
 .resume-wrapper {
-  display: flex;
-  width: 50%;
+  position: relative;
+  background-image: url(resumeImg.jpg);
+  background-size: cover;
+  background-position: cover;
+  height: 90vh;
 }
+
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Roboto Condensed' sans-serif;
+  z-index: 1;
+}
+
+.contact-wrapper {
+  position: relative;
+  background-image: url(contactImg.jpg);
+  background-size: 100%;
+  background-position: cover;
+  height: 100vh;
+  color: aliceblue;
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Roboto Condensed' sans-serif;
+  z-index: 1;
+}
+
+.resumeButton {
+  z-index: 1;
+  background-color: #fff;
+  color: black;
+}
+
