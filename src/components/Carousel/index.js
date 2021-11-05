@@ -6,6 +6,8 @@ import surf from '../../assets/images/surf-report.png'
 import calculator from '../../assets/images/calculator.png'
 import ledWall from '../../assets/images/led-wall.png'
 import React from "react";
+import Card from "../Card";
+import { Container, Row } from "react-bootstrap";
 
 class Carousel extends React.Component {
 
@@ -77,12 +79,25 @@ class Carousel extends React.Component {
                 item.selected = false;
             }
         });
+
+        this.setState({
+            items
+        })
     }
    
+    makeItems = (items) => {
+        return items.map(item => {
+            return <Card item={item} onClick={(e => this.handleCardClick(item.id, e))} key={item.id} />
+        })
+    }
 
     render() {
         return(
-            <p>Card stuff</p>
+            <Container fluid={true}>
+                <Row className="justify-content-around">
+                    {this.makeItems(this.state.items)}
+                </Row>
+            </Container>
         )
     }
     
