@@ -159,3 +159,7 @@ a {
   text-decoration: underline;
   margin: 10px;
 }
+
+.bioText p {
+  background-color: #bdbdbd;
+}
