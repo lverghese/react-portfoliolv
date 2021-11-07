@@ -74,7 +74,7 @@ class App extends React.Component {
                 </NavbarCollapse>
             </Navbar>
             <Switch>
-            <Route path="/" exact render={() => <Home title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} />}  />
+            <Route path="/react-portfoliolv" exact render={() => <Home title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} />}  />
             <Route path="/about" exact render={() => <About title={this.state.about.title}  />}  />
             <Route path="/contact" exact render={() => <Contact title={this.state.contact.title}  />}  />
             <Route path="/project" exact render={() => <Project title={this.state.project.title} />}  />
