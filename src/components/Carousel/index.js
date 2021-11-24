@@ -3,7 +3,6 @@ import fitnessBuddy from '../../assets/images/fitnessBuddy.png'
 import frontEnd from '../../assets/images/frontEnd.png'
 import weatherDash from '../../assets/images/weatherdashboard.png'
 import budgetTracker from '../../assets/images/budgettracker.png'
-import techBlog from '../../assets/images/techblog.png'
 import NewsDistillery from '../../assets/images/NewsDistillery.png'
 import React from "react";
 import Card from "../Card";
