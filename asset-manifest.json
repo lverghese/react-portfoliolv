@@ -1,19 +1,20 @@
 {
   "files": {
     "main.css": "/react-portfoliolv/static/css/main.43d2a7a3.chunk.css",
-    "main.js": "/react-portfoliolv/static/js/main.1183fdb7.chunk.js",
-    "main.js.map": "/react-portfoliolv/static/js/main.1183fdb7.chunk.js.map",
+    "main.js": "/react-portfoliolv/static/js/main.e0287570.chunk.js",
+    "main.js.map": "/react-portfoliolv/static/js/main.e0287570.chunk.js.map",
     "runtime-main.js": "/react-portfoliolv/static/js/runtime-main.324a2d29.js",
     "runtime-main.js.map": "/react-portfoliolv/static/js/runtime-main.324a2d29.js.map",
     "static/css/2.a75f5a2c.chunk.css": "/react-portfoliolv/static/css/2.a75f5a2c.chunk.css",
-    "static/js/2.3f47b79e.chunk.js": "/react-portfoliolv/static/js/2.3f47b79e.chunk.js",
-    "static/js/2.3f47b79e.chunk.js.map": "/react-portfoliolv/static/js/2.3f47b79e.chunk.js.map",
+    "static/js/2.e7599a92.chunk.js": "/react-portfoliolv/static/js/2.e7599a92.chunk.js",
+    "static/js/2.e7599a92.chunk.js.map": "/react-portfoliolv/static/js/2.e7599a92.chunk.js.map",
     "static/js/3.e0c5a2a2.chunk.js": "/react-portfoliolv/static/js/3.e0c5a2a2.chunk.js",
     "static/js/3.e0c5a2a2.chunk.js.map": "/react-portfoliolv/static/js/3.e0c5a2a2.chunk.js.map",
     "index.html": "/react-portfoliolv/index.html",
     "static/css/2.a75f5a2c.chunk.css.map": "/react-portfoliolv/static/css/2.a75f5a2c.chunk.css.map",
     "static/css/main.43d2a7a3.chunk.css.map": "/react-portfoliolv/static/css/main.43d2a7a3.chunk.css.map",
-    "static/js/2.3f47b79e.chunk.js.LICENSE.txt": "/react-portfoliolv/static/js/2.3f47b79e.chunk.js.LICENSE.txt",
+    "static/js/2.e7599a92.chunk.js.LICENSE.txt": "/react-portfoliolv/static/js/2.e7599a92.chunk.js.LICENSE.txt",
+    "static/media/NewsDistillery.c7384c1f.png": "/react-portfoliolv/static/media/NewsDistillery.c7384c1f.png",
     "static/media/Resume-1.0ac2ce72.png": "/react-portfoliolv/static/media/Resume-1.0ac2ce72.png",
     "static/media/budgettracker.75fbdd1e.png": "/react-portfoliolv/static/media/budgettracker.75fbdd1e.png",
     "static/media/App.css": "/react-portfoliolv/static/media/resumeImg.d97fa6dd.jpg",
@@ -27,8 +28,8 @@
   "entrypoints": [
     "static/js/runtime-main.324a2d29.js",
     "static/css/2.a75f5a2c.chunk.css",
-    "static/js/2.3f47b79e.chunk.js",
+    "static/js/2.e7599a92.chunk.js",
     "static/css/main.43d2a7a3.chunk.css",
-    "static/js/main.1183fdb7.chunk.js"
+    "static/js/main.e0287570.chunk.js"
   ]
 }
