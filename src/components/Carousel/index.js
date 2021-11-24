@@ -3,6 +3,7 @@ import fitnessBuddy from '../../assets/images/fitnessBuddy.png'
 import frontEnd from '../../assets/images/frontEnd.png'
 import weatherDash from '../../assets/images/weatherdashboard.png'
 import budgetTracker from '../../assets/images/budgettracker.png'
+import techBlog from '../../assets/images/techblog.png'
 import NewsDistillery from '../../assets/images/NewsDistillery.png'
 import React from "react";
 import Card from "../Card";
@@ -44,15 +45,15 @@ class Carousel extends React.Component {
                     title: 'News Distillery Hub',
                     subTitle: 'Search for articles and save to your user',
                     imgSrc: NewsDistillery,
-                    link: 'https://lverghese.github.io/react-portfoliolv/',
+                    link: 'https://news-distillery.herokuapp.com/',
                     selected: false
                 },
                 {
-                    id: 4,
-                    title: 'Weather Dashboard',
-                    subTitle: 'Find out the weather in your favorite city!',
-                    imgSrc: weatherDash,
-                    link: 'https://lverghese.github.io/weather-dashboard/',
+                    id: 3,
+                    title: 'Tech Blog',
+                    subTitle: 'Post what you know and comment on others!',
+                    imgSrc: techBlog,
+                    link: 'https://techblog-lv.herokuapp.com/',
                     selected: false
                 },
                 {
